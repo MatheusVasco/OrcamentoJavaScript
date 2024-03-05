@@ -9,7 +9,10 @@
 <body>
     <header id="header" class="header">
         <h1>Orçamento - INCLUIR</h1>
-        <button type="submit" >Confirmar</button>
+        <div class="buttons-submits">
+            <button type="submit" >Cancelar</button>
+            <button type="submit" class="button-blue">Confirmar</button>
+        </div>
     </header>
     <main id="main" class="main">
         <div id="divCabecalho" class="div-cabecalho">
@@ -41,6 +44,10 @@
                     <input type="text" id="percentualDesconto" class="percentual-desconto">
                 </div>
                 <div class="div-inputs">
+                    <label for="percentualAcrescimo">% Acrescimo</label>
+                    <input type="text" id="percentualAcrescimo" class="percentual-acrescimo">
+                </div>
+                <!-- <div class="div-inputs">
                     <label for="percentualDesconto">% Desconto</label>
                     <input type="text" id="percentualDesconto" class="percentual-desconto">
                 </div>
@@ -111,9 +118,37 @@
                 <div class="div-inputs">
                     <label for="percentualDesconto">% Desconto</label>
                     <input type="text" id="percentualDesconto" class="percentual-desconto">
-                </div>
+                </div> -->
             </form>
         </div>
     </main>
+    <div class="div-grid-orcamento">
+        <table class="grid-orcamento" id="gridOrcamento">
+            <thead>
+                <tr>
+                    <th class="bolinha-estoque-disponivel"></th>
+                    <th class="nome-item">Item</th>
+                    <th class="nome-produto">Produto</th>
+                    <th class="nome-descricao">Descrição</th>
+                    <th class="nome-quantidade">Quantidade</th>
+                    <th class="nome-unidade">Unidade</th>
+                    <th class="nome-estoque">Estoque</th>
+                    <th class="nome-valor-liquido">Valor Liquido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./assets/img/bola-verde.svg" alt=""></td>
+                    <td><input type="number" disabled class="input-item"></td>
+                    <td><input type="text" class="input-produto"></td>
+                    <td><input type="text" class="input-descricao"></td>
+                    <td><input type="number" class="input-quantidade"></td>
+                    <td><input type="text" class="input-unidade"></td>
+                    <td><input type="number" class="input-estoque"></td>
+                    <td><input type="number" class="input-valor-liquido"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
