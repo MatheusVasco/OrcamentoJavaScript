@@ -1,5 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+h1 {
+    font-size: 3.2rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* h2 {
+    font-size: ;
+} */
+
+.header h1 {
+    /* font-size: 2rem; */
+    padding: 2rem;
+    position: absolute;
+}
+
+.header button {
+    top: 2rem;
+    right: 2rem;
+    height: 3.5rem;
+    width: 8rem;
+    position: absolute;
+    background-color: rgb(48, 170, 201);
+    border-style: none;
+    border-radius: 5%;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.header {
+    margin: 0 0.5rem;
+    width: 99vw;
+    height: 7.5rem;
+    position: fixed;
+    color: rgb(11, 155, 191);
+    background-color: rgb(243, 245, 245);
+}
+
+.main {
+    padding-top: 7.5rem;
+}
+
 .div-cabecalho {
-    width: 100%;
-    height: 100%;
-    /* background: #000; */
+    /* margin-top: 10rem; */
+    position: relative;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    width: 98.7vw;
+    height: 40vh;
+    background: #FFF;
+    border: lightgray solid 0.1rem;
+    border-radius: 0.5%;
+    overflow-y: scroll;
+}
+.div-cabecalho .formulario-cabecalho {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #FFF;
+}
+
+.formulario-cabecalho .div-inputs{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #FFF;
+}
+
+#numeroOrcamento {
+    width: 10rem;
+}
+#codigoCliente {
+    width: 15rem;
+}
+#nomeCliente {
+    width: 50rem;
 }
