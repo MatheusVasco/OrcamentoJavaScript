@@ -94,6 +94,7 @@ th, td {
     background-color: rgb(243, 245, 245);
     display: flex;
     flex-flow: row nowrap;
+    overflow-x: scroll;
 }
 .bolinha-estoque-disponivel{
     width: 1.5rem;
